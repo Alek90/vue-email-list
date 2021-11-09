@@ -22,6 +22,8 @@ const root = new Vue({
 
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(response =>{
             console.log(response);
+            this.newEmail = response.data.response
+            console.log(this.newEmail);
         }),
 
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(response =>{
