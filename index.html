@@ -12,9 +12,9 @@
 
         <h1>ELENCO INDIRIZZI EMAIL</h1>
 
-        <ul>
+        <ul v-show="emails.length > 9">
 
-            <li v-for="email in emails">
+            <li v-for="(email, index) in emails">
                 {{email}}
             </li>
             
